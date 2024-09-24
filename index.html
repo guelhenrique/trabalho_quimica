@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Química</title>
+    <link rel="stylesheet" href="quimica.css"> <!-- Link para o CSS -->
+</head>
+<body>
+    <header>
+        <div class="logo">Trabalho de Química</div>
+        <input type="text" class="search" placeholder="Pesquisar...">
+        <button class="toggle-theme" onclick="toggleTheme()">Mudar Tema</button>
+    </header>
+
+    <main>
+        <section class="hero">
+            <img src="quimica.png" alt="tabai de Química">
+        </section>
+
+        <article class="elemento">
+            <h2>superficie de contato</h2>
+            <p class="info-button">O que é?</p>
+            <div class="info">A área de superfície de um reagente sólido é fundamental para a velocidade e eficiência das reações químicas. Em um experimento, reagentes em pó com diferentes tamanhos de partículas foram aquecidos sob condições iguais, visando observar o impacto da área de superfície na reação. Os resultados mostraram que o pó com partículas menores, e maior área de superfície, apresentou uma taxa de reação muito mais elevada. Isso se deve ao maior contato com o meio reativo, facilitando as interações entre os reagentes. Assim, uma maior área exposta permite que mais reações ocorram simultaneamente, acelerando o processo. Além disso, o pó menor atingiu temperaturas de fervura mais altas do que os reagentes maiores, evidenciando a eficiência das colisões moleculares em superfícies amplas. Em resumo, a redução do tamanho das partículas não só acelera as reações, mas também afeta as condições térmicas.</div>
+        </article>
+
+        <article class="elemento">
+            <h2>Relação da temperatura</h2>
+            <p class="info-button">Como a temperatura afeta?</p>
+            <div class="info">Este trabalho analisa a influência da temperatura da água na reatividade de um pó ácido. Ao adicionar o pó à água gelada, observou-se uma efervescência mínima, indicando que as reações químicas eram bastante limitadas em temperaturas mais baixas. Por outro lado, ao introduzir o pó em água quente, a efervescência aumentou consideravelmente, demonstrando uma reação mais intensa. Os dados coletados mostram que o aumento da temperatura acelera as reações químicas, resultando em maior liberação de gases, perceptível pela efervescência. Esse fenômeno ocorre devido à maior energia cinética das moléculas em temperaturas elevadas, favorecendo colisões eficazes entre as partículas do reagente e as moléculas de água. Assim, a temperatura se revela um fator crítico na reatividade de substâncias sólidas em solução. Além disso, os resultados destacam a importância de controlar as condições térmicas em experimentos com reagentes sólidos. Compreender essa relação é fundamental, especialmente em contextos industriais e laboratoriais, onde a otimização das reações pode levar a processos mais eficientes. Portanto, este estudo demonstra que a manipulação da temperatura pode ser uma ferramenta poderosa para promover reações químicas e aumentar a liberação de produtos gasosos.</div>
+        </article>
+
+        <article class="elemento">
+            <h2>Relaçao entre Agua sanitaria e batata</h2>
+            <p class="info-button">Neste experimento, foi investigada a reação entre água oxigenada (H₂O₂) e batata, que contém a enzima catalase.</p>
+            <div class="info">Ao adicionar água oxigenada à batata picada, observou-se a formação de bolhas, evidenciando a liberação de oxigênio gasoso. Esse fenômeno resulta da decomposição do peróxido de hidrogênio, catalisada pela catalase presente na batata. A enzima acelera a conversão do H₂O₂ em água e oxigênio, destacando a importância das enzimas como catalisadores em reações biológicas. A efervescência é um indicativo direto dessa atividade catalítica, já que a produção de oxigênio se manifesta através das bolhas. O experimento ilustra o papel fundamental das enzimas na biologia, demonstrando como pequenas quantidades de catalase podem acelerar reações que, de outro modo, ocorreriam lentamente. Além disso, a reação exemplifica como organismos vivos utilizam enzimas para facilitar processos bioquímicos essenciais. A decomposição do H₂O₂ é especialmente relevante, pois essa substância pode ser tóxica para as células; assim, a catalase atua como um mecanismo de defesa, protegendo os organismos dos efeitos nocivos do peróxido de hidrogênio.</div>
+        </article>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Blog de Química. Todos os direitos reservados.</p>
+    </footer>
+
+    <script>
+        function toggleTheme() {
+            document.body.classList.toggle('dark-theme');
+        }
+
+        const infoButtons = document.querySelectorAll('.info-button');
+        infoButtons.forEach(button => {
+            button.addEventListener('mouseover', () => {
+                const infoDiv = button.nextElementSibling;
+                infoDiv.style.display = 'block';
+            });
+            button.addEventListener('mouseout', () => {
+                const infoDiv = button.nextElementSibling;
+                infoDiv.style.display = 'none';
+            });
+        });
+    </script>
+</body>
+</html>
